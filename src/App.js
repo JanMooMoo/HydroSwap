@@ -124,7 +124,7 @@ this.setState({loading:true})
       
           const address_swaps = await hydroSwap.methods.checkArray().call()
           if (this._isMounted){
-             this.setState({address_swaps:address_swaps},()=>console.log(this.state.address_swaps))
+             this.setState({address_swaps:address_swaps},()=>console.log())
           
           }
     
