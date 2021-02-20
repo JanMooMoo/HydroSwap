@@ -153,6 +153,7 @@ reserve = () =>{
       connection = 'search-button'
       disabled = false;
     }
+    
   
   return (
 
@@ -189,7 +190,7 @@ reserve = () =>{
               
               <tbody>
               </tbody>
-                {!this.state.loading && this.state.address_swaps.map((swaps,index)=> <tr
+                {!this.state.loading && this.state.address_swaps.slice(0).reverse().map((swaps,index)=> <tr
                  className="cursor-pointer mt-2" key={index}>  
 				        <td >{index + 1}</td>   
                 <td> <a href={'https://rinkeby.etherscan.io/address/' + swaps} target='blank'>{swaps}</a></td>     
