@@ -165,7 +165,7 @@ reserve = () =>{
        <header className="App-header">
 
         <button className="search-button"  onClick={this.connect}>Connect Wallet</button>
-        <button className={connection} type="button" disabled={disabled} onClick={this.reserve}> Reserve My Hydro </button>
+        <button className={connection} type="button" disabled={disabled} onClick={this.reserve}> Approve my Hydro to be sent to BSC </button>
         
         <p>{this.state.network === 'rinkeby'? '':'Wrong Network Please Switch to Rinkeby Network'}</p>
 
@@ -174,7 +174,7 @@ reserve = () =>{
             <div className="column">
               <p className='disclaimer'>Connected Wallet Address: {this.state.account} </p>
          
-              {this.state.reservation_status? <p className='disclaimer2'>Reservation Status:  Reserved</p>:<p className='disclaimer3'>Reservation Status:  No Reservation</p>}
+              {this.state.reservation_status? <p className='disclaimer2'>Approval Status:  Approved</p>:<p className='disclaimer3'>Reservation Status:  No Reservation</p>}
           </div>
         </div>
          
@@ -184,7 +184,7 @@ reserve = () =>{
                   <thead>
                   <tr>
                     <th>No.</th>
-                    <th>Ethereum Address</th>            
+                    <th>Binance Smart Chain Address</th>            
                   </tr>
               </thead>
               
